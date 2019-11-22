@@ -3,7 +3,8 @@
 
 How to run :
 
-1. mvn clean install -Dopenliberty
+1. export OPENLIBERTY_VERSION='the version of OpenLiberty features-bom you would like to use'
+2. mvn clean install -Dopenliberty
 
 
 ## License
