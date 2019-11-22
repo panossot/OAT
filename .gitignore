@@ -12,7 +12,6 @@ modules/testcases/*/*.java
 
 
 #dirs
-modules/testcases/jdkAll/1.x/jbossModules/test-configurations/src
 target
 .idea
 .settings
