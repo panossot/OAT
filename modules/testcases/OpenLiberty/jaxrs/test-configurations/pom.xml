@@ -47,7 +47,7 @@
                     <assemblyArtifact>
                         <groupId>io.openliberty</groupId>
                         <artifactId>openliberty-runtime</artifactId>
-                        <version>$OPENLIBERTY_VERSION</version>
+                        <version>[18.0.0.4,)</version>
                         <type>zip</type>
                     </assemblyArtifact>
                     <configFile>${basedir}/src/test/resources/server.xml</configFile>
