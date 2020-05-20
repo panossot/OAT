@@ -24,6 +24,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.ATFeature;
 
 @EapAdditionalTestsuite({"modules/testcases/OpenLiberty/jaxrs/src/main/java"})
 @RunWith(Arquillian.class)
@@ -92,9 +93,14 @@ public class JaxbTest {
     }
 
     @Test
+    @ATFeature(feature={"jaxrs,jaxb,jsonp,cdi,localConnector,servlet"},minVersion={"2.1,2.2,1.1,2.0,1.0,4.0"},maxVersion={"null,null,null,null,null,null"})
     public void testJaxRs() throws Exception {
         String result = httpCall("rest/resource");
         Assert.assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><model><name>Niki</name></model>", result);
+    }
+
+    @Test
+    public void defaultTest() {
     }
 
 }
