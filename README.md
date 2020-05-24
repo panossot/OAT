@@ -9,8 +9,8 @@ How to run :
 2. mvn clean install -Dopenliberty (It should be executed with appropriate apache maven version, e.g. 3.5.3 works)
 
 
-### A PROJECT UNDER THE ΙΔΕΑ STATEMENT
---------------------------------------
+### USING THE AT FEATURE STRUCTURE 
+-----------------------------------
 
 How to enable AT Feature Sturcture :
 
