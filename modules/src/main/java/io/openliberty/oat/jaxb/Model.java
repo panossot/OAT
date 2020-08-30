@@ -2,10 +2,10 @@ package io.openliberty.oat.jaxb;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.EAT;
 
 
-@EapAdditionalTestsuite({"modules/testcases/OpenLiberty/jaxrs/src/main/java"})
+@EAT({"modules/testcases/OpenLiberty/jaxrs/src/main/java"})
 @XmlRootElement
 public class Model {
 

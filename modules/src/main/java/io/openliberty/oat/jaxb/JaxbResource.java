@@ -1,3 +1,4 @@
+
 package io.openliberty.oat.jaxb;
 
 import javax.ws.rs.GET;
@@ -5,12 +6,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import org.jboss.eap.additional.testsuite.annotations.EAT;
 
-@Path("resource")
+@Path("jaxb")
 @Produces({"application/xml"})
 @EAT({"modules/testcases/OpenLiberty/jaxrs/src/main/java"})
-public class Resource {
+public class JaxbResource {
     @GET
-    public Model get() {
-        return new Model("Niki");
+    public JaxbModel get() {
+        return new JaxbModel("John","Citizen");
     }
 }
